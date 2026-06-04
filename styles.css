@@ -1,0 +1,40 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    
+    height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: aqua;
+}
+#userForm {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    margin-top: 8px;
+}
+
+ 
+
+
