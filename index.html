@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personalized Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-slate-200">
     <main>
         <section>
             <div class="container">
                 <div class="card">
-                    <h1>Personalized Webpage</h1>
+                    <h1 class="font-black text-xl">Personalized Webpage</h1>
                     <form id="userForm" action="#">
-                        <label for="fname">Name:</label>
-                        <input type="text" id="fname">
-                        <label for="ageMonth">Age:</label>
-                        <input type="number" id="ageMonth">
-                        <button class="btn" type="submit">click</button>
+                        <label for="fname">Name</label>
+                        <input class="border border-black-200 rounded-md p-1" type="text" id="fname">
+                        <label for="ageMonth">Age</label>
+                        <input class="border border-black-200 rounded-md p-1" type="number" id="ageMonth">
+                        <button class="btn" type="submit">submit</button>
                     </form>
                 </div>
                 
             </div>
         </section>
         
-            <section>
-                <h2 id="greetingText"></h2>
-                <p id="ageMonth"></p>
-                <p id="adultContent"></p>
-            </section>
-       
-        <div>
-            <h3 id="motivation"></h3>
-        </div>
+            <div class="bg-slate-400 border border-black-200 ml-2 rounded-lg p-2">
+                <section>
+                    <h2 id="greetingText" class="font-black"></h2>
+                    <p id="ageMonth" class="text-slate-500"></p>
+                    <p id="adultContent"></p>
+                </section>
+                       
+                        <div>
+                <h3 id="motivation" class="text-slate-200"></h3>
+                        </div>
+            </div>
     </main>
     <script src="script.js"></script>
 </body>
