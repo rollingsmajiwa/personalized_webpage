@@ -61,6 +61,7 @@ git push origin feature/YourFeatureName
 git clone [htps://github.com/rongingsmajiwa/personalized_webpage.git]
 ```
 ## 8. Screenshots
+![personalized page](assets/images/Screenshotweb.jpg)
 
 
 ## 9. Author
