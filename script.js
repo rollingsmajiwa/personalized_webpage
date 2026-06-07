@@ -15,7 +15,7 @@ userForm.addEventListener("submit", function() {
    event.preventDefault();
   
     let userName = fname.value;
-    let userAge = ageMonth.value;
+    let userAge = age.value;
 
     
     localStorage.setItem("savedName", userName);
@@ -25,7 +25,7 @@ userForm.addEventListener("submit", function() {
     greetingText.textContent = `Hello ${userName}`;
     
      let months = calculateAge(userAge);
-     ageMonth.textContent = `You are ${months} old`;
+     ageMonth.textContent = `You are ${months} months old`;
      if(userAge >= 18) {
         adultContent.textContent = `You can access adult content`;
      }
@@ -34,6 +34,6 @@ userForm.addEventListener("submit", function() {
      }
      motivation.innerHTML = "";
      for(let i = 0; i < 5; i++) {
-        motivation.innerHTML += "Keep trying!"
+        motivation.innerHTML += "Keep trying! <br>"
      }
 });
